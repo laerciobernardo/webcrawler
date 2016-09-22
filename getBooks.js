@@ -64,8 +64,8 @@ var download_file_wget = function(file_url) {
 
     var child = exec(wget, function(err, stdout, stderr) {
         if (err){
-          var errLog =  "Erro on download book: "+err;
-          fs.appendFileSync('erros.txt', errLog + '\n');
+          var errLog = "Erro: "+err;
+          fs.appendFileSync('errors.txt', errLog + '\n');
           return;
         } else {
           console.log(file_url + ' downloaded to ' + DOWNLOAD_DIR);
