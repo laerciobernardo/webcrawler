@@ -53,12 +53,12 @@ function func(data) {
 
 
 var download_file_wget = function(file_url) {
-    var urlParsed = escapeStringRegexp(encodeURI(file_url));
+    var urlParsed = file_url;
 
     // extract the file name
     var file_name = url.parse(urlParsed).pathname.split('/').pop();
     // compose the wget command
-    var wget = 'wget -P ' + DOWNLOAD_DIR + ' ' + urlParsed;
+    var wget = 'wget -P ' + DOWNLOAD_DIR + ' ' + "\'"+urlParsed+"\'";
     console.log("executando o wget => ",wget);
     // excute wget using child_process' exec function
 
