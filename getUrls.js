@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 var fs = require('fs');
 
 var URL_PRINCIPAL = "http://lelivros.me/book/page/";
-var NUMERO_PAGINAS = 421;
+var NUMERO_PAGINAS = 424;
 var urls = [];
 
 for (var i = 0; i <= NUMERO_PAGINAS; i++) {
