@@ -2,7 +2,7 @@ var request = require('request');
 var cheerio = require('cheerio');
 var fs = require('fs');
 
-var URL_PRINCIPAL = "http://lelivros.download/book/page/";
+var URL_PRINCIPAL = "http://lelivros.me/book/page/";
 var NUMERO_PAGINAS = 421;
 var urls = [];
 
